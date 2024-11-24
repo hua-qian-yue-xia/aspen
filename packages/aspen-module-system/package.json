@@ -1,0 +1,7 @@
+{
+  "name": "@aspen/module-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "aspen系统模块",
+  "main": "index.js"
+}

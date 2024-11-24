@@ -1,0 +1,7 @@
+{
+  "name": "@aspen/generate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "aspen代码生成器",
+  "main": "index.js"
+}

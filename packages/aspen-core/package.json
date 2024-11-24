@@ -1,0 +1,7 @@
+{
+  "name": "@aspen/core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "aspen核心库",
+  "main": "index.js"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "@aspen/framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "aspen框架功能封装",
+  "main": "index.js"
+}
