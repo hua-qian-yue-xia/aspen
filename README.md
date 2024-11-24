@@ -1,7 +1,6 @@
-代码格式化配置
-=
-eslint配置
--
+### 代码格式化配置
+
+#### eslint配置
 
 ``` js
 module.exports = {
@@ -54,8 +53,7 @@ module.exports = {
 }
 ```
 
-prettierrc配置
--
+#### prettierrc配置
 
 ``` js
 module.exports = {
@@ -72,4 +70,41 @@ module.exports = {
   "singleQuote": false
 }
 
+```
+
+### 工作空间
+
+1. 新建`pnpm-workspace.yaml`文件
+
+```yaml
+packages:
+  - 'packages/*'
+```
+
+2. 新建`packages`文件夹,在`packages`文件夹下新建模块比如`aspen-core`
+3. 进入`aspen-core`文件夹下输入`pnpm init`初始化工作空间生成**package.json**文件
+4. 修改`aspen-core`文件夹下的**package.json**文件
+
+```json
+{
+  "name": "@aspen/core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "aspen核心库",
+  "main": "index.js"
+}
+```
+
+5. 主项目**package.json**文件下添加`aspen-core`工作空间的依赖
+
+```json
+{
+  "name": "my-midway-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "@aspen/core": "workspace:^1.0.0"
+  }
+}
 ```
